@@ -1,0 +1,9 @@
+@import "./import.css" screen and (max-width: 400px);
+
+.external {
+  color: red
+}
+
+.override {
+  color:black
+}

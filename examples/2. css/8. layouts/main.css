@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+.layout {
+  padding-left:16px;
+  border: 2px solid;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  border: 2px solid;
+  border-radius: 4px;
+  background: hotpink;
+  margin: 16px;
+}

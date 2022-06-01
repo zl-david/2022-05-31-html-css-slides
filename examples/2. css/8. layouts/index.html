@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      /* FLOW */
+
+      .flow {
+      }
+
+      /* POSITIONED */
+
+      .positioned {
+        position: relative;
+        min-height: 80px;
+      }
+      .positioned > .item {
+        position: sticky;
+        left: 80px;
+      }
+
+      /* FLEXBOX */
+
+      .flexbox {
+        display: flex;
+      }
+
+      /* TABLE */
+
+      .table {
+        display: table;
+      }
+      .table__row {
+        display: table-row;
+      }
+      .table .item {
+        display: table-cell;
+      }
+
+      /* GRID */
+      .grid {
+        display: grid;
+
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 80px; 
+        column-gap: 10px;
+        row-gap: 15px;
+      }
+
+    </style>
+  </head>
+	<body>
+
+    <section class="layout">
+      <h1>Flow</h1>
+
+      <div class="flow">
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>  
+    </section>
+
+    <section class="layout">
+      <h1>positioned</h1>
+
+      <div class="positioned">
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>  
+    </section>
+
+    <section class="layout">
+      <h1>Flexbox</h1>
+
+      <div class="flexbox">
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <h1>Table</h1>
+
+      <div class="table">
+        <div class="table__row">
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <h1>Grid</h1>
+
+      <div class="grid">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </section>
+    
+
+  </body>
+</html>

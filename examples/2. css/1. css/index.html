@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+    <link rel="stylesheet" href="./1.css" />
+    <style>
+      .box {
+        position: relative;
+      }
+      .first.box {
+        z-index: 2;
+        background: hotpink;
+      }
+      .second.box {
+        z-index: 1;
+        background: silver;
+        margin-top: -20px;
+        margin-left: 20px;
+      }
+      /*👇🏻 Stacking context 1 */
+      /* .container { 
+        opacity: 0.9;
+      }  */
+
+      /*👇🏻 Stacking context 2 */
+      /* .container {
+        position: relative;
+        z-index: 1;
+      } */
+    </style>
+  </head>
+	<body>
+
+    <div class="container">
+      <div class="first box"></div>
+    </div>
+    <div class="second box"></div>
+
+  </body>
+</html>
